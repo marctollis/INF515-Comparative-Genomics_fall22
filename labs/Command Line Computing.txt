@@ -1,0 +1,25 @@
+Command Line Computing
+
+text editors - sublime or BBEdit
+
+GUI vs CLI
+
+terminal interfaces - download 
+
+for Mac: xcode-select —install
+for Windows: get Hyper or MobaXterm
+
+do tutorial
+
+mention file formats
+
+grep ">" fasta_example.fasta
+grep ">" fasta_example.fasta | wc -l
+
+cat bed_example.bed
+awk '{print $2}' bed_example.bed
+awk '{print $3-$2}' bed_example.bed
+
+watch Monsoon workshop
+uplaod answers to Exxercise 1
+upload answers to Exercise 2
