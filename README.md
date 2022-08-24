@@ -14,6 +14,7 @@ The course is modeled after other genomics courses being taught by [Mike Schatz 
 
 ## Prerequisites
 * The course is open to any NAU graduate student, although certain components are meant to benefit CS/Informatics, Biology, and Forestry students working on a thesis project.<br/>
+* Students will complete a research project as part of their grade, you may use your own data or publicly available data. Projects will be explained in detail during class.
 
 ## Resources
 * Materials for the course are available at this repository. Go to the green "Code" button, and download the repository.<br/>
