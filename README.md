@@ -18,7 +18,7 @@ The course is modeled after other genomics courses being taught by [Mike Schatz 
 
 ## Resources
 * Materials for the course are available at this repository. Go to the green "Code" button, and download the repository.<br/>
-* Syllabus and policies
+* [Syllabus and policies](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/INF515_F22_syllabus.pdf)
 * NAU BBLearn (Blackboard) site - this will be primarily how you submit assignments and quizzes.
 
 ## Course Schedule
