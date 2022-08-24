@@ -1,3 +1,3 @@
-# INF415
+# INF515
 
 Comparative Genomics
