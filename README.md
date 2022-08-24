@@ -22,7 +22,7 @@ The course is modeled after other genomics courses being taught by [Mike Schatz 
 * NAU BBLearn (Blackboard) site - this will be primarily how you submit assignments and quizzes.
 
 ## Course Schedule
-This is a tentative outline and topics may cary according to student needs. The course will be delivered in person but can be done remotely if quarantines are required. Attendance is strongly encouraged as there will be live coding demonstrations. It is important to be flexible in response to the changes the COVID-19 pandemic has made to the rhythm of our lives.
+This is a tentative outline and topics may vary according to student needs. The course will be delivered in person but can be done remotely if quarantines are required. Attendance is strongly encouraged as there will be live coding demonstrations. It is important to be flexible in response to the changes the COVID-19 pandemic has made to the rhythm of our lives.
 * All assignments for a given week are due on Sunday 11:59 PM. No late work is accepted. The two lowest quiz grades will be dropped.
 * Email me questions with "INF515 F22" in the subject line. Please do not expect rapid responses over weekends (my advice is to START YOUR ASSIGMENTS EARLY IN THE WEEK).
 
