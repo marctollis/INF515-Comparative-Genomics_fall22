@@ -38,7 +38,7 @@ This is a tentative outline and topics may cary according to student needs. The 
 | Oct 24 | 10 | Comparative Methods | [Comparative methods lecture](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/09%20ComparativeMethods.pdf) | Harmon chapters 3 and 7 | Work on labs | Quiz 8; Lab 3; Lab 4; Lab 5 |
 | Oct 31 | 11 | Tests for Selection | [Selection lecture 1](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/10%20TestsForSelection.pdf) | Sackton et al. 2020 | Lab 6: codon models | Quiz 9 |
 | Nov 7 | 12 | Population Genomics and Selective Sweeps | [Selection lecture 2](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/11%20LinkedSelection.pdf);</br>[Population structure](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/12%20PopGenomicsStructure.pdf) | Kern and Hahn 2018;</br>Jensen et al. 2019 | NO CLASS Fri 11/11: Veteran's Day | Quiz 10 |
-| Nov 14 | 13 | Evolutionary Conservation | Conservation lecture | Sackton et al. 2019 | Lab 7: UCSC Genome Browser | Quiz 11 |
+| Nov 14 | 13 | Evolutionary Conservation | [Conservation lecture](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/13%20EvolutionaryConservation.pdf) | Sackton et al. 2019 | Lab 7: UCSC Genome Browser | Quiz 11 |
 | Nov 21 | 14 | Ancient DNA and Paleogenomics | Bergstrom et al. 2020 | Robinson et al. 2018 | NO CLASS Fri 11/25: Thanksgiving |  |
 | Nov 28 |  | Projects, discussion | Projects, discussion | Projects, discussion | Projects, discussion | Quiz 12; Lab 6 |
 | Dec 5 |  | Projects, discussion | Projects, discussion | Projects, discussion | Projects, discussion | Lab 7 |
