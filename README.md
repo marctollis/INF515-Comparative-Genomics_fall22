@@ -10,6 +10,8 @@ The purpose of this course is to familiarize informatics students with methods a
 
 Special emphasis is on building practical skills in computational biology. Classes will consist of lectures, student led discussions of primary literature, and computational labs.
 
+The course is modeled after other genomics courses being taught at [Cold Spring Habor](https://github.com/schatzlab/appliedgenomics2017) and [Brown University](https://github.com/Yale-EEB723/syllabus).
+
 ## Prerequisites
 * The course is open to any NAU graduate student, although certain components are meant to benefit CS/Informatics, Biology, and Forestry students working on a thesis project.<br/>
 
