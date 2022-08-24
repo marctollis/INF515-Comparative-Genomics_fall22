@@ -35,8 +35,8 @@ This is a tentative outline and topics may cary according to student needs. The 
 | 9 | Phylogenomics 2 | Phylogenomics 2 lecture | Donoghue and Benton 2007 | Lab 5: Divergence time estimation | Quiz 7 |
 | 10 | Comparative Methods | Comparative methods lecture | Harmon chapters 3 and 7 | TBD | Quiz 8 |
 | 11 | Tests for Selection | Selection lecture 1 | Sackton et al. 2020 | TBD | Quiz 9 |
-| 12 | Population Genomics and Selective Sweeps | Kern and Hahn 2018;</br>Jensen et al. 2019 | Lab 7: Selective sweeps | Quiz 10 |
-| 13 | Evolutionary Conservation | Selection lecture 2 | Sackton et al. 2019 | Lab 8: UCSC Genome Browser | Quiz 11 |
+| 12 | Population Genomics and Selective Sweeps | Selection lecture 2 | Kern and Hahn 2018;</br>Jensen et al. 2019 | Lab 7: Selective sweeps | Quiz 10 |
+| 13 | Evolutionary Conservation | Conservation lecture | Sackton et al. 2019 | Lab 8: UCSC Genome Browser | Quiz 11 |
 | 14 | Ancient DNA and Paleogenomics | Bergstrom et al. 2020 | Robinson et al. 2018 | TBD | Quiz 12 |
 | 15 | Projects, discussion
 | 16 | Projects, discussion
