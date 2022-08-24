@@ -6,7 +6,7 @@ Office Hours: MoWeFri 2:00-2:30PM<br/>
 Please go to http://bblearn.nau.edu for weekly quizzes and to submit assignments
 
 ## Course Description
-The purpose of this course is to familiarize informatics students with methods and theories behind comparative genomics. Biology is now a big-data science that is genomic in scale, and the growing availability of genome sequence data from across the tree of life challenges researchers to provide evolutionary explanations for this diversity. This course focuses on the analysis of genomic sequences, including sequencing technologies, genome assembly, functional and structural predictions, and comparisons at macroevolutionary timescales in a phylogenetic context. 
+The purpose of this course is to familiarize students with methods, theories, and applications behind comparative genomics. Biology is now a big-data science that is genomic in scale, and the growing availability of genome sequence data from across the tree of life challenges researchers to provide evolutionary explanations for this diversity. This course focuses on the analysis of genomic sequences, including sequencing technologies, genome assembly, functional and structural predictions, and comparisons at macroevolutionary timescales in a phylogenetic context. 
 
 Special emphasis is on building practical skills in computational biology. Classes will consist of lectures, student led discussions of primary literature, and computational labs.
 
