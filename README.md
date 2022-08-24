@@ -19,7 +19,7 @@ The course is modeled after other genomics courses being taught by [Mike Schatz 
 ## Resources
 * Materials for the course are available at this repository. Go to the green "Code" button, and download the repository.<br/>
 * [Syllabus and policies](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/INF515_F22_syllabus.pdf)
-* NAU BBLearn (Blackboard) site - this will be primarily how you submit assignments and quizzes.
+* [NAU BBLearn](https://bblearn.nau.edu/) - this will be primarily how you submit assignments and quizzes.
 
 ## Course Schedule
 This is a tentative outline and topics may vary according to student needs. The course will be delivered in person but can be done remotely if quarantines are required. Attendance is strongly encouraged as there will be live coding demonstrations. It is important to be flexible in response to the changes the COVID-19 pandemic has made to the rhythm of our lives.
