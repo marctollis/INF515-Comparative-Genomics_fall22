@@ -27,17 +27,17 @@ This is a tentative outline and topics may cary according to student needs. The 
 
 | Week | Module | Topics | Monday | Wednesday  | Friday  | Assignment |
 | ---| ------------ | ------ | -------------- | ------- | ---------- | --------------- |
-| Aug 29 | 1 and 2 | Course Introductions + Sequencing Technologies | Course Intro | Sequencing Technologies | Shendure et al. 2017  | * Quiz 1</br>* sign up for discussion leadership</br>* Software carpentry (optional)</br>* Computing quiz |
+| Aug 29 | 1 and 2 | Course Introductions + Sequencing Technologies | [Course Intro](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/01%20Introduction.pdf) | [Sequencing Technologies](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/02%20GenomeSequencing.pdf) | Shendure et al. 2017  | * Quiz 1</br>* sign up for discussion leadership</br>* Software carpentry (optional)</br>* Computing quiz |
 | Sept 5 | 3 | Computing in Genomics | Command line workshop | Introduction to Monsoon at NAU | Introduction to Monsoon at NAU |  |  |
-| Sept 12 | 4 | Genome Assembly | Genome assembly lecture | Sedlazeck et al. 2018; Bradnam et al. 2013 | Lab 1: Assembling a Genome | Quiz 2 |
-| Sept 19 | 5 | Genome Annotation 1 | Genome annotation lecture 1 | Yandell and Ence 2012 |  Lab 2: repeatmasking | Quiz 3 |
-| Sept 26 | 6 | Genome Annotation 2 | Genome annotation lecture 2 | Aken et al. 2016;</br>Holt and Yandell 2011  | Work on labs | Quiz 4; Lab 1; Lab 2 |
-| Oct 3 | 7 | Orthology | Orthology lecture | Kriventseva et al. 2019 |  Lab 3: NCBI, Ensembl, OrthoDB | Quiz 5 |
-| Oct 10 | 8 | Phylogenomics 1 | Phylogenomics 1 lecture | Morales-Briones et al. 2020 | Lab 4: Tree building | Quiz 6 |
-| Oct 17 | 9 | Phylogenomics 2 | Phylogenomics 2 lecture | Donoghue and Benton 2007 | Lab 5: Divergence time estimation | Quiz 7 |
-| Oct 24 | 10 | Comparative Methods | Comparative methods lecture | Harmon chapters 3 and 7 | Work on labs | Quiz 8; Lab 3; Lab 4; Lab 5 |
-| Oct 31 | 11 | Tests for Selection | Selection lecture 1 | Sackton et al. 2020 | Lab 6: codon models | Quiz 9 |
-| Nov 7 | 12 | Population Genomics and Selective Sweeps | Selection lecture 2 | Kern and Hahn 2018;</br>Jensen et al. 2019 | NO CLASS Fri 11/11: Veteran's Day | Quiz 10 |
+| Sept 12 | 4 | Genome Assembly | [Genome assembly lecture](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/03%20GenomeAssembly.pdf) | Sedlazeck et al. 2018; Bradnam et al. 2013 | Lab 1: Assembling a Genome | Quiz 2 |
+| Sept 19 | 5 | Genome Annotation 1 | [Genome annotation lecture 1](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/04%20GenomeAnotation.pdf) | Yandell and Ence 2012 |  Lab 2: repeatmasking | Quiz 3 |
+| Sept 26 | 6 | Genome Annotation 2 | [Genome annotation lecture 2](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/05%20GenomeAnnotation2.pdf) | Aken et al. 2016;</br>Holt and Yandell 2011  | Work on labs | Quiz 4; Lab 1; Lab 2 |
+| Oct 3 | 7 | Orthology | [Orthology lecture](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/06%20Orthology.pdf) | Kriventseva et al. 2019 |  Lab 3: NCBI, Ensembl, OrthoDB | Quiz 5 |
+| Oct 10 | 8 | Phylogenomics 1 | [Phylogenomics 1 lecture](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/07%20Phylogenetics.pdf) | Morales-Briones et al. 2020 | Lab 4: Tree building | Quiz 6 |
+| Oct 17 | 9 | Phylogenomics 2 | [Phylogenomics 2 lecture](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/08%20Phylogenetics%202.pdf) | Donoghue and Benton 2007 | Lab 5: Divergence time estimation | Quiz 7 |
+| Oct 24 | 10 | Comparative Methods | [Comparative methods lecture](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/09%20ComparativeMethods.pdf) | Harmon chapters 3 and 7 | Work on labs | Quiz 8; Lab 3; Lab 4; Lab 5 |
+| Oct 31 | 11 | Tests for Selection | [Selection lecture 1](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/10%20TestsForSelection.pdf) | Sackton et al. 2020 | Lab 6: codon models | Quiz 9 |
+| Nov 7 | 12 | Population Genomics and Selective Sweeps | [Selection lecture 2](https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/lectures/11%20LinkedSelection.pdf) | Kern and Hahn 2018;</br>Jensen et al. 2019 | NO CLASS Fri 11/11: Veteran's Day | Quiz 10 |
 | Nov 14 | 13 | Evolutionary Conservation | Conservation lecture | Sackton et al. 2019 | Lab 7: UCSC Genome Browser | Quiz 11 |
 | Nov 21 | 14 | Ancient DNA and Paleogenomics | Bergstrom et al. 2020 | Robinson et al. 2018 | NO CLASS Fri 11/25: Thanksgiving |  |
 | Nov 28 |  | Projects, discussion | Projects, discussion | Projects, discussion | Projects, discussion | Quiz 12; Lab 6 |
