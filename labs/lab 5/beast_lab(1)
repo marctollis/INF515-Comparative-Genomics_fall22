@@ -1,0 +1,225 @@
+
+
+
+download BEAST2 http://www.beast2.org/
+move to applications folder
+
+Download FigTree https://github.com/rambaut/figtree/releases
+.dmg for Mac, .zip for Windows, .tgz for Linux
+
+Download Tracer here https://github.com/beast-dev/tracer/releases/latest
+
+Create a directory on your computer for beast analysis.
+
+Go to Applications folder and open the BEAST2.6.x directory.
+
+Open Beauti.
+
+##################
+# Loading the data
+##################
+
+In the bottom right corner, click on the plus sign. Select BEAST2.6.x/examples/nexus/primates-mtDNA.nex
+
+Click OK on the warning statement.
+
+Select the line that says 'coding' in the name and clock the minus sign on the lower right.
+
+##########################
+# Setting up shared models
+##########################
+
+Select all four data partitions the Partitions panel and click the Link Trees and Link Clock Models buttons
+
+Click on the first drop-down menu in the Clock Model column and rename the shared clock model to clock.
+
+Likewise rename the shared tree to tree.
+
+################################
+# Setting the substitution model
+################################
+
+Select the Site Model tab.
+
+Go to the Partitions tab, select all partitions and click the Link Site Models button
+
+Return to the Site Model tab.
+
+Check the estimate checkbox at the Substitution Rate.
+
+Set the Gamma Category Count to 4.
+
+Check the estimate box for the Shape parameter.
+
+Select HKY in the Subst Model drop-down.
+
+Select Empirical from the Frequencies drop-down.
+
+Go to the Partitions tab again, select all partitions and click the Unlink Site Models button.
+
+#########################
+# Setting the clock model
+#########################
+
+Go to the Clock Models tab and view the setup.
+
+################
+# Setting priors
+################
+
+Go to the Priors tab and select the Calibrated Yule Model in the Tree.t:tree dropdown menu
+
+For birthRateY.t:tree select Gamma from the dropdown menu,
+
+Expand the options for birthRateY.t:tree using the arrow button on the right.
+
+Set the Alpha (shape) parameter to 0.001 and the Beta (scale) parameter to 1000.
+
+###########################
+# Adding a calibration node
+###########################
+
+Click the small + button below all the priors.
+
+Set the Taxon set label to human-chimp.
+
+Locate Homo_sapiens taxon in the left hand side list and click the » button to add it to the taxa set for human-chimp.
+
+Locate Pan taxon in the left hand side list and click the » button to add it to the taxa set for human-chimp.
+
+Click the OK button to add the newly defined taxa set to the prior list.
+
+Check the monophyletic checkbox next to the human-chimp.prior.
+
+Select the Normal distribution from the drop down menu to the right of the newly added human-chimp.prior.
+
+Expand the distribution options using the arrow button on the left.
+
+Set the Mean of the distribution to 6.
+
+Set the Sigma of the distribution to 0.5.
+
+##########################
+# Setting the MCMC options
+##########################
+
+Go to the MCMC tab.
+
+Set the Chain Length to 1’000’000.
+
+Expand the tracelog options.
+
+Set the Log Every parameter to 200.
+
+Expand the screenlog options.
+
+Leave the Log Every parameter at the default value of 1’000.
+
+Expand the treelog.t:tree options.
+
+Set the File Name to primate-mtDNA.trees.
+
+Leave the Log Every parameter at the default value of 1’000.
+
+#########################
+# Generating the XML file
+#########################
+
+Save the XML file under the name Primates.xml using File > Save.
+
+######################
+# Running the analysis
+######################
+
+Run the BEAST2 program.
+
+Select Primates.xml as the Beast XML File.
+
+Set the Random number seed to 777 (or pick your favourite number).
+
+Run BEAST2 by clicking the Run button.
+
+###############################
+# Analysing parameter estimates
+###############################
+
+Open Tracer.
+
+Use File > Import Trace File... to load the primate-mtDNA.log file that BEAST2 has created.
+
+Select the TreeHeight statistic in the bottom left hand list in Tracer and view the different summary statistics on the right.
+
+Select all four mutation rates by clicking the first mutation rate (mutationRate.noncoding), then holding Shift and clicking the last mutation rate (mutationRate.3rdpos).
+
+Select the Marginal Prob Distribution tab on the right to view the four distributions together.
+
+##########################################
+# Analysing the posterior estimate quality
+##########################################
+
+Two very important summary statistics that we should pay attention to are the Auto-Correlation Time (ACT) and the Effective Sample Size (ESS).
+
+ACT is the average number of states in the MCMC chain that two samples have to be separated by for them to be uncorrelated. The ACT is estimated from the samples in the trace.
+
+The ESS is the number of independent samples that the trace is equivalent to. This is calculated as the chain length (excluding the burn-in) divided by the ACT.
+
+In general, an ESS of 200 will be considered enough to make the analysis useful.
+
+Try running the same analysis, but first load the XML configuration file into BEAUti again by pressing File > Load and select the Primates.xml file.
+
+Within BEAUti, change the MCMC chain length parameter to 2’500’000.
+
+Change the trace and tree log file names in order for not over-writing the results of the previous analysis. You may add something like _long behind the name of the file, to obtain primate-mtDNA_long.log for the log file and primate-mtDNA_long.trees for trees file.
+
+Run BEAST2 again with the updated configuration and the seed of 777. This will take a bit more time.
+
+##########################
+# Analysing tree estimates
+##########################
+
+Run TreeAnnotator.
+
+Set the Burnin percentage to 1.
+
+Leave the Posterior probability limit at the default value of 0.
+
+Leave the Target tree type at the default value of Maximum clade credibility tree.
+
+Select Mean heights in the Node heights dropdown menu.
+
+Set the Input Tree File to the primate-mtDNA.trees file.
+
+Set the Output File to Primates.MCC.tree.
+
+Run the MCC tree generation by clocking the Run button.
+
+###############################
+# Visualising the tree estimate
+###############################
+
+Run FigTree.
+
+Open the Primates.MCC.tree file using File > Open.
+
+Check the Node Bars checkbox.
+
+Expand the Node Bars options and select the height_95%_HPD in the Display dropdown.
+
+Check the Node Labels checkbox.
+
+Expand the Node Labels options and select the posterior in the Display dropdown.
+
+Run DensiTree.
+
+Open the primate-mtDNA.trees file using File > Load.
+
+Expand the Show options and check the Consensus Trees checkbox.
+
+Select the Central view mode in the top right menu.
+
+Expand the Clades menu.
+
+Check the Show clades checkbox and the text checkbox for the Support.
+
+Select Help > View clades and view the different clades and their probabilities.
+
