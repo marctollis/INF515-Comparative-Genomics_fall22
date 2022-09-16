@@ -89,16 +89,17 @@ cd $PROJ_DIR
 
 mkdir fastq && cd fastq
 
+export SRR=SRR5324768
 
-wget https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/labs/lab_1/SRR5324768_pass_1.fastq.gz?raw=true
-wget https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/labs/lab_1/SRR5324768_pass_2.fastq.gz?raw=true
+wget https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/labs/lab_1/${SRR}_pass_1.fastq.gz?raw=true
+wget https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/labs/lab_1/${SRR}_pass_2.fastq.gz?raw=true
 
-mv SRR5324768_pass_1.fastq.gz?raw=true SRR5324768_pass_1.fastq.gz
-mv SRR5324768_pass_2.fastq.gz?raw=true SRR5324768_pass_2.fastq.gz
+mv ${SRR}_pass_1.fastq.gz?raw=true ${SRR}_pass_1.fastq.gz
+mv ${SRR}_pass_2.fastq.gz?raw=true ${SRR}_pass_2.fastq.gz
 
 # look at the first few lines of each file.
-zcat SRR5324768_pass_1.fastq.gz | head
-zcat SRR5324768_pass_2.fastq.gz | head 
+zcat ${SRR}_pass_1.fastq.gz | head
+zcat ${SRR}_pass_2.fastq.gz | head 
 
 # What are the read lengths?
 # What do the 4 lines for each read in a fastq file indicate?
