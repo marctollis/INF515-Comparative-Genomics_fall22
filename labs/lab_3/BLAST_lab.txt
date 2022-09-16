@@ -1,0 +1,121 @@
+### Command Line BLAST Lab
+
+# The goal of this lab is to use command line BLAST (as opposed to web BLAST) to determine orthology between mouse and zebrafish genes.
+
+# Instead of relying on pre-installed modules or conda environments, we will:
+##1) download the BLAST binaries (executable program files) into our home directories on Monsoon
+##2) add the binaries to our PATH, 
+##3) download query and database files into our scratch/ directories,
+##4) execute the BLAST search on Monsoon compute nodes.
+
+
+###########################################
+## DOWNLOAD SOFTWARE AND SET UP DIRECTORIES
+###########################################
+
+# ssh into Monsoon with your credentials (don't forget to use the VPN if you are off campus)
+# make sure you are in your home directory
+
+cd
+
+# create a directory to install blast (and other bioinformatics tools)
+# don't forget to switch out your userid!!!
+export TOOLS_DIR=/home/userid/tools
+Mkdir $TOOLS_DIR
+
+# move into that directory
+cd $TOOLS_DIR
+
+# download blast program
+# Monsoon runs on Linux, so we will download that version
+wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.12.0+-x64-linux.tar.gz
+
+# unpack the tar file
+tar -xzvf ncbi-blast-2.11.0+-x64-linux.tar.gz
+
+# add the blast binaries to your path
+# don't forget to switch out your userid!!!
+export PATH=$PATH:/home/userid/tools/ncbi-blast-2.11.0+/bin/
+
+# creat project directory
+export PROJ_DIR=/scratch/userid/CompGenomicsCourse/fall21/orthology
+mkdir $PROJ_DIR
+
+# move into project direcoty
+cd $PROJ_DIR
+
+# create blast directory
+mkdir blast
+cd blast
+
+# get data for blast 
+curl -o mouse.1.protein.faa.gz -L https://osf.io/v6j9x/download
+curl -o zebrafish.1.protein.faa.gz -L https://osf.io/68mgf/download
+
+# look at files in direcotry
+ls -l
+
+# unzip data
+gunzip *.faa.gz
+
+# look at first few lines of data
+head mouse.1.protein.faa
+
+# what type of file format is this?
+# what kind of sequence data is it? (nucleotide, protein, etc)
+# how can you tell what the sequence type is, just based on the filename?
+
+# take first few sequences from mouse.1 and save them to a file
+head -n 11 mouse.1.protein.faa > mm-first.faa
+
+# format zebrafish database with makeblastdb
+salloc
+srun makeblastdb -in zebrafish.1.protein.faa -dbtype prot
+
+# BLAST is not memory intensive, so we will just use the default resources.
+# For larger analyses, you can add multithreading but we will not here.
+
+srun blastp -query mm-first.faa -db zebrafish.1.protein.faa
+
+# this puts a lot of output to the screen, it's better to use the -out flag to redirect the output to a file (mm-first.x.zebrafish.txt)
+
+srun blastp -query mm-first.faa -db zebrafish.1.protein.faa -out mm-first.x.zebrafish.txt
+
+# view contents of output file
+less mm-first.x.zebrafish.txt
+
+# this is standard blast output. Why is this difficult to parse and make sense of?
+
+# let's try a larger query file, taking the first 96 mouse sequences.
+head -498 mouse.1.protein.faa > mm-second.fa
+
+# let's run this blast search and get output in standard format
+srun blastp -query mm-second.fa -db zebrafish.1.protein.faa -out mm-second.x.zebrafish.txt
+
+# and now we'll do it again to produce -outfmt 6 which is tabular output
+# this is more human-readable, and parseable for downstream analyses!!!!
+
+srun blastp -query mm-second.fa -db zebrafish.1.protein.faa -out mm-second.x.zebrafish.tsv -outfmt 6
+
+# here is a legend for the column headers in the blast tabular output format
+# http://www.metagenomics.wiki/tools/blast/blastn-output-format-6
+
+# how many matches total are there? (Hint - use wc -l on the tabular output)
+
+# sort the output by bitscore (column 12) and print the first 25, and then the last 25 lines
+
+sort -rn -k12 mm-second.x.zebrafish.tsv |  head -25
+sort -rn -k12 mm-second.x.zebrafish.tsv |  tail -25
+
+# the 'r' is for reverse order sort and the 'n' is to force numeric strings
+
+# what is the relationship between column 12 and column 11?
+
+# let's collect hits that have 65% or greater protein identity and sort them by bitscore
+
+awk '$3 >= 65.00' mm-second.x.zebrafish.tsv | sort -rn -k12
+
+# how many hits are there with 65% or more protein identity? (hint - use wc -l on the output)
+# what is the relationship between evalue, bitscore, and percent identity?
+# 65% protein identity is actually quite high. 
+# Why do you think there are hits with 65% and above protein identity, low bitscores and high evalues? Hint: check column 4 (and check its column header).
