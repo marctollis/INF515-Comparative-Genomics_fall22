@@ -89,11 +89,9 @@ cd $PROJ_DIR
 
 mkdir fastq && cd fastq
 
-export SRR=SRR5324768
 
-wget https://github.com/Yale-EEB723/syllabus/raw/master/exercises/alignment/${SRR}_pass_1.fastq.gz
-wget https://github.com/Yale-EEB723/syllabus/raw/master/exercises/alignment/${SRR}_pass_2.fastq.gz
-
+wget https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/labs/lab_1/SRR5324768_pass_1.fastq.gz
+wget https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/labs/lab_1/SRR5324768_pass_2.fastq.gz
 
 # look at the first few lines of each file.
 zcat SRR5324768_pass_1.fastq.gz | head
