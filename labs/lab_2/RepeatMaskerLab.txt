@@ -17,7 +17,7 @@
 # create a project directory in your scratch, fill in below. We will name this lab 'repeats'
 # make sure you turn userid into your id
 
-export PROJ_DIR=/scratch/userid/CompGenomicsCourse/fall21/repeats
+export PROJ_DIR=/scratch/userid/CompGenomicsCourse/fall22/repeats
 
 mkdir -p $PROJ_DIR && cd $PROJ_DIR
 
