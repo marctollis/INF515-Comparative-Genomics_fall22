@@ -10,11 +10,11 @@ The purpose of this course is to familiarize students with methods, theories, an
 
 Special emphasis is on building practical skills in computational biology. Classes will consist of lectures, student led discussions of primary literature, and computational labs.
 
-The course is modeled after other genomics courses being taught by [Mike Schatz @ Cold Spring Habor](https://github.com/schatzlab/appliedgenomics2017) and [Casey Dunn @ Yale University](https://github.com/Yale-EEB723/syllabus). Some publicly available material has been repurposed.
+The course inspired by other genomics courses being taught by [Mike Schatz @ Cold Spring Habor](https://github.com/schatzlab/appliedgenomics2017) and [Casey Dunn @ Yale University](https://github.com/Yale-EEB723/syllabus). I try to cite all material where credit is due. Some publicly available material has been repurposed.
 
 ## Prerequisites
 * The course is open to any NAU graduate student, although certain components are meant to benefit CS/Informatics, Biology, and Forestry students working on a thesis project.<br/>
-* Students will complete a research project as part of their grade, you may use your own data or publicly available data. Projects will be explained in detail during class.
+* Students will choose between a Track A (research) and Track B (survey paper) for a final project as 20% of their grade, you may use your own data or publicly available data. Projects and tracks will be explained in detail during class and are available on BBLearn.
 
 ## Resources
 * Materials for the course are available at this repository. Go to the green "Code" button, and download the repository.<br/>
