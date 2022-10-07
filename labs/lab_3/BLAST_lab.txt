@@ -38,21 +38,14 @@ tar -xzvf ncbi-blast-2.13.0+-x64-linux.tar.gz
 export PATH=$PATH:/home/userid/tools/ncbi-blast-2.13.0+/bin
 
 # create project directory
-export PROJ_DIR=/scratch/userid/CompGenomicsCourse/fall22/orthology
-mkdir $PROJ_DIR
-
-# move into project direcoty
-cd $PROJ_DIR
+export PROJ_DIR=/scratch/userid/CompGenomicsCourse/fall22/orthology && mkdir $PROJ_DIR && cd $PROJ_DIR/
 
 # create blast directory
 mkdir blast && cd blast
 
 # get data for blast 
-wget https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/labs/lab_3/mouse.1.protein.faa.gz?raw=true
-wget https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/labs/lab_3/zebrafish.1.protein.faa.gz?raw=true
-
-mv mouse.1.protein.faa.gz?raw=true mouse.1.protein.faa.gz
-mv zebrafish.1.protein.faa.gz?raw=true zebrafish.1.protein.faa.gz
+wget https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/labs/lab_3/mouse.1.protein.faa.gz?raw=true && mv mouse.1.protein.faa.gz?raw=true mouse.1.protein.faa.gz
+wget https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/labs/lab_3/zebrafish.1.protein.faa.gz?raw=true && mv zebrafish.1.protein.faa.gz?raw=true zebrafish.1.protein.faa.gz
 
 # look at files in direcotry
 ls -l
@@ -93,7 +86,9 @@ head -498 mouse.1.protein.faa > mm-second.fa
 
 # let's run this blast search and get output in standard format
 srun blastp -query mm-second.fa -db zebrafish.1.protein.faa -out mm-second.x.zebrafish.txt
-
+#####################################################
+# this might take a few minutes - many sequences!!! #
+#####################################################
 # and now we'll do it again to produce -outfmt 6 which is tabular output
 # this is more human-readable, and parseable for downstream analyses!!!!
 
