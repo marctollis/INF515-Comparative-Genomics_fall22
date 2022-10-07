@@ -28,29 +28,31 @@ cd $TOOLS_DIR
 
 # download blast program
 # Monsoon runs on Linux, so we will download that version
-wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.12.0+-x64-linux.tar.gz
+wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.13.0+-x64-linux.tar.gz
 
 # unpack the tar file
-tar -xzvf ncbi-blast-2.11.0+-x64-linux.tar.gz
+tar -xzvf ncbi-blast-2.13.0+-x64-linux.tar.gz
 
 # add the blast binaries to your path
 # don't forget to switch out your userid!!!
-export PATH=$PATH:/home/userid/tools/ncbi-blast-2.11.0+/bin/
+export PATH=$PATH:/home/userid/tools/ncbi-blast-2.13.0+/bin
 
-# creat project directory
-export PROJ_DIR=/scratch/userid/CompGenomicsCourse/fall21/orthology
+# create project directory
+export PROJ_DIR=/scratch/userid/CompGenomicsCourse/fall22/orthology
 mkdir $PROJ_DIR
 
 # move into project direcoty
 cd $PROJ_DIR
 
 # create blast directory
-mkdir blast
-cd blast
+mkdir blast && cd blast
 
 # get data for blast 
-curl -o mouse.1.protein.faa.gz -L https://osf.io/v6j9x/download
-curl -o zebrafish.1.protein.faa.gz -L https://osf.io/68mgf/download
+wget https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/labs/lab_3/mouse.1.protein.faa.gz?raw=true
+wget https://github.com/marctollis/INF515-Comparative-Genomics_fall22/blob/main/labs/lab_3/zebrafish.1.protein.faa.gz?raw=true
+
+mv mouse.1.protein.faa.gz?raw=true mouse.1.protein.faa.gz
+mv zebrafish.1.protein.faa.gz?raw=true zebrafish.1.protein.faa.gz
 
 # look at files in direcotry
 ls -l
