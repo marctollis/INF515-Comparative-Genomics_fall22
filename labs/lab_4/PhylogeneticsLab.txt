@@ -241,7 +241,7 @@ srun iqtree2 -s BRCA1primatesAligned.fasta -o Callithrix_jacchus -B 1000
 
 # takes about a minute to run.
 
-less BRCA1_primates.aligned.fasta.iqtree
+less BRCA1primatesAligned.fasta
 
 # How many species (sequences) were in this alignment?
 # What is the length (in nucleotides) of this alignment?
