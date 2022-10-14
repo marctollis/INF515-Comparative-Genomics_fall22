@@ -46,7 +46,7 @@ ln -s $TOOLS_DIR/iqtree-2.2.0-Linux/example.phy
 
 # we will perform model testing followed by ML inference of the best tree, and assess branch support with 1000 bootstrap replicates
 
-srun iqtree -s example.phy -B 1000
+srun iqtree2 -s example.phy -B 1000
 
 # View the output
 
