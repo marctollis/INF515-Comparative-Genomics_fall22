@@ -26,24 +26,19 @@
 
 export TOOLS_DIR=/home/userid/tools
 cd $TOOLS_DIR
-wget https://github.com/iqtree/iqtree2/releases/download/v2.1.2/iqtree-2.1.2-Linux.tar.gz
-tar -xzvf iqtree-2.1.2-Linux.tar.gz
-rm iqtree-2.1.2-Linux.tar.gz
-export PATH=$PATH:$TOOLS_DIR/iqtree-2.1.2-Linux/bin/
+wget https://github.com/iqtree/iqtree2/releases/download/v2.2.0/iqtree-2.2.0-Linux.tar.gz
+tar -xzvf iqtree-2.2.0-Linux.tar.gz && rm iqtree-2.2.0-Linux.tar.gz
+export PATH=$PATH:$TOOLS_DIR/iqtree-2.2.0-Linux/bin/
 
 ##########################
 # SET UP PROJECT DIRECTORY
 ##########################
 
-export PROJ_DIR=/scratch/mt2245/CompGenomicsCourse/fall21/phylo/
-mkdir $PROJ_DIR
-cd $PROJ_DIR
-
-mkdir ml
-cd ml
+export PROJ_DIR=/scratch/mt2245/CompGenomicsCourse/fall22/phylo/
+mkdir $PROJ_DIR && cd $PROJ_DIR && mkdir ml && cd ml
 
 # Let's move the example data into workdir using symbolic links
-ln -s $TOOLS_DIR/iqtree-2.1.2-Linux/example.phy
+ln -s $TOOLS_DIR/iqtree-2.2.0-Linux/example.phy
 
 ########################################################
 # Model Testing and ML Phylogenetic Inference: Test Data
@@ -51,7 +46,7 @@ ln -s $TOOLS_DIR/iqtree-2.1.2-Linux/example.phy
 
 # we will perform model testing followed by ML inference of the best tree, and assess branch support with 1000 bootstrap replicates
 
-srun iqtree2 -s example.phy -B 1000
+srun iqtree -s example.phy -B 1000
 
 # View the output
 
@@ -226,17 +221,19 @@ grep ">" /path/to/BRCA1_refseq_transcript.fasta
 # Do you know where your computer downloads items?
 # My recent downloads are in my Chrome bar on the bottom.
 
-#######################
-#Secure Copy to Monsoon
-#######################
+##############################################################
+#Secure Copy to Monsoon or use OnDemand ondemand.hpc.nau.edu
+##############################################################
+
+# For OnDemand, follow the tutorial if you haven't already: https://in.nau.edu/arc/ondemand-orientation/
 
 # Open a terminal.
 # scp /path/to/local/file userid@remote.computer.edu:/path/to/workdir
 
-scp /Users/mt2245/Dropbox/INF_Syllabi/ComparativeGenomicsLabs/BRCA1_primates.fasta mt2245@monsoon.hpc.nau.edu:/scratch/mt2245/CompGenomicsCourse/spring21/phylo/ml
+scp /Users/mt2245/Dropbox/INF_Syllabi/ComparativeGenomicsLabs/BRCA1primatesAligned.fasta mt2245@monsoon.hpc.nau.edu:/scratch/mt2245/CompGenomicsCourse/fall22/phylo/ml
 
 # Go back to your monsoon terminal. 
-# ls your working directory to make sure the BRCA1_primates.fasta file is there.
+# ls your working directory to make sure the BRCA1primatesAligned.fasta file is there.
 
 srun iqtree2 -s BRCA1primatesAligned.fasta -o Callithrix_jacchus -B 1000
 
